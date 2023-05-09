@@ -179,15 +179,15 @@ p{
 }
 #WSF {
     grid-area: WSF;
-    background-image: url(images/WSF\ mockup.png);
+    background-image: url(docs/assets/Images/WSF\ mockup.png);
 }
 #CA {
     grid-area: CA;
-    background-image: url(images/CA\ Mockup.png);
+    background-image: url(docs/assets/Images/CA\ Mockup.png);
 }
 #Gifted {
     grid-area: Gifted;
-    background-image: url(images/Gifted\ Mockup.png);
+    background-image: url(docs/assets/Images/Gifted\ Mockup.png);
 }
 .heading {
     background-color: white;
