@@ -8,14 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Merriweather&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0fd05aea59.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <!-- navigation -->
 <body>
     <section class="header">
     <nav class="navbar">
             <a href="/" id="navbar_logo">Yasmin Osman</a>
-        <div class="nav_links"> 
+        <div class="nav_links"id="navLinks"> 
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="/">Projects</a></li>
                 <li><a href="/">About</a></li>
@@ -23,19 +26,45 @@
                 <li><a href="/">Contact</a></li>
             </ul>
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
-    
     </section>
+    
 <!-- content -->
 <section>
     <div class="text_box">
         <h1>Hi, I'm Yasmin.<br> A UX Designer with an<br> enthusiasm for creative<br> and intuitive design.</h1>
     </div>
 </section>
+
+<!-- projects -->
+<div class="subHeading">
+    <h3>My Projects</h3>
+</div>
+    <section id="projectGrid">
+        <div id="WSF" class="projectGridArea">
+          <div class="heading">Water Smart Foundation</div>
+        </div>
+        <div id="CA" class="projectGridArea">
+          <div class="heading">Canada Council of Arts</div>
+        </div>
+        <div id="Gifted" class="projectGridArea">
+          <div class="heading">Gifted</div>
+        </div>
+      </section>
+</section>
 <!-- footer -->
 
 
-
-
+<!-- Javascript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+        function hideMenu(){
+        navLinks.style.right="-200px";
+        }
+</script>
 </body>
 </html>
